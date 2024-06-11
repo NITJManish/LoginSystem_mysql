@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalvium</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section class="box">
+        <div class="design">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="form">
+            <h2>User Login</h2>
+            <% if (error) { %>
+                <p class="design-p" style="color: red;"><%= error %></p>
+            <% } %>
+
+            <form action="/" method="POST">
+                <input type="email" name="email" class="input-field" placeholder="email" />
+                <input type="password" name="password" class="input-field" placeholder="password" />
+                <input type="submit" class="btn" value="LOGIN">
+            </form>
+            <div class="text-center">
+                <p class="top">Don't have an account yet? <a href="/register">Register</a></p>
+              
+              </div>
+        </div>
+    </section>
+</body>
+</html>
